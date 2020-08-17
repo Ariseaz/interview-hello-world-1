@@ -1,6 +1,12 @@
 
 node {
-   
+   stage('Get Source') {
+      // Check if Docker file is present
+      git ('https://github.com/Ariseaz/interview-hello-world.git')
+      if (!fileExists("Dockerfile")) {
+         error('Dockerfile missing.')
+      }
+   }
 
    stage('Unit Test') {
       // run the unit tests
