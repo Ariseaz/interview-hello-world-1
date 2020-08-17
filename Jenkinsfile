@@ -2,7 +2,7 @@
 node {
    stage('Get Source') {
       // Check if Docker file is present
-      git ('https://github.com/Ariseaz/interview-hello-world.git')
+      git ('https://github.com/Ariseaz/interview-hello-world-1.git')
       if (!fileExists("Dockerfile")) {
          error('Dockerfile missing.')
       }
