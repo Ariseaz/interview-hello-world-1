@@ -1,5 +1,7 @@
 FROM python:3.7.2
 
+RUN pip freeze > requirements.txt
+
 #Copy requirement file to working dir
 COPY requirements.txt /
 
