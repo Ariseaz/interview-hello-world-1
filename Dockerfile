@@ -20,4 +20,4 @@ EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
-CMD [ "python3 -m flask run", "hello.py" ]
+CMD [ "python", "hello.py" ]
